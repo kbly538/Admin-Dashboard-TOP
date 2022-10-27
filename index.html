@@ -8,37 +8,38 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssreset.css">
+    
 </head>
 
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo-title"> <img src="img/dashboard-logo.svg" alt="dashboard logo"> Dashboard</div>
+            <div class="logo-title"> <img src="img/dashboard-logo.svg" alt="dashboard logo"> <a href="">Dashboard</a></div>
             <div class="sidebar-grid-container">
 
                 <div class="pages">
                     <ul>
-                        <li class="home"><img src="img/home.svg" alt="home icon"> Home</li>
-                        <li class="profile"><img src="img/card-account-details-outline.svg" alt="profile icon"> Profile
+                        <li class="home"><img src="img/home.svg" alt="home icon"> <a href="">Home</a> </li>
+                        <li class="profile"><img src="img/card-account-details-outline.svg" alt="profile icon"> <a href="">Profile</a>
                         </li>
-                        <li class="messages"><img src="img/message-reply.svg" alt="messages icon"> Messages</li>
-                        <li class="history"><img src="img/history.svg" alt=""> History</li>
-                        <li class="tasks"><img src="img/file-tree.svg" alt=""> Tasks</li>
-                        <li class="Communities"><img src="img/account-group.svg" alt=""> Communities</li>
+                        <li class="messages"><img src="img/message-reply.svg" alt="messages icon"> <a href="">Messages</a></li>
+                        <li class="history"><img src="img/history.svg" alt=""> <a href="">History</a></li>
+                        <li class="tasks"><img src="img/file-tree.svg" alt=""> <a href="">Tasks</a></li>
+                        <li class="Communities"><img src="img/account-group.svg" alt=""> <a href="">Communities</a></li>
                     </ul>
                 </div>
                 <div class="extras">
                     <ul>
-                        <li class="settings"><img src="img/tune.svg" alt=""> Settings</li>
-                        <li class="supports"><img src="img/face-agent.svg" alt=""> Support</li>
-                        <li class="privacy"><img src="img/shield-account.svg" alt=""> Privacy</li>
+                        <li class="settings"><img src="img/tune.svg" alt=""> <a href="">Settings</a></li>
+                        <li class="supports"><img src="img/face-agent.svg" alt=""> <a href="">Support</a></li>
+                        <li class="privacy"><img src="img/shield-account.svg" alt=""> <a href="">Privacy</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="header">
             <div class="search-bar">
-                <img class="search-icon" src="./img/magnify.svg" alt="searchbar icon">
+                <a href=""><img class="search-icon" src="./img/magnify.svg" alt="searchbar icon"></a>
                 <label for="search-bar">
                     <input type="text" name="searchtext" id="search-bar">
                 </label>
@@ -47,7 +48,7 @@
                 <img src="img/female-svgrepo-com.svg" alt="profile picture">
                 <div class="greeting">
                     <p>Hi there, </p>
-                    <p>General Stewart <span class="account-name">(@stewart)</span></p>
+                    <p>General Stewart <span class="account-name"><a href="">(@stewart)</a></span></p>
                 </div>
             </div>
             <div class="profile-settings">
@@ -59,9 +60,15 @@
             </div>
             <div class="actions">
                 <ul>
-                    <li>New</li>
-                    <li>Upload</li>
-                    <li>Share</li>
+                    <a href="">
+                        <li>New</li>
+                    </a>
+                    <a href="">
+                        <li>Upload</li>
+                    </a>
+                    <a href="">
+                        <li>Share</li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -71,7 +78,7 @@
                     <div class="title">Your Projects</div>
                     <div class="card-container">
                         <div class="card">
-                            <h1 class="card-title">Super Cool Project</h1>
+                            <h1 class="card-title"><a href="">Super Cool Project</a></h1>
                             <div class="project-description">
                                 <p class="card-para">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit
@@ -80,15 +87,19 @@
                                 </p>
                             </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="img/star-plus-outline.svg"
-                                        alt="like icon"></button>
-                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
-                                        alt="watch project icon"></button>
+                                <button class="fav-button"><a href="">
+                                    <img src="img/star-plus-outline.svg"
+                                            alt="like icon">
+                                </a></button>
+                                <button class="watch-button"><a href="">
+                                    <img src="img/eye-plus-outline.svg"
+                                            alt="watch project icon">
+                                </a></button>
                                 <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
                             </div>
                         </div>
                         <div class="card">
-                            <h1 class="card-title">Super Cool Project</h1>
+                            <h1 class="card-title"><a href="">Super Cool Project</a></h1>
                             <div class="project-description">
                                 <p class="card-para">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit
@@ -97,11 +108,15 @@
                                 </p>
                             </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="img/star-plus-outline.svg"
-                                        alt="like icon"></button>
-                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
-                                        alt="watch project icon"></button>
-                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
+                                <button class="fav-button"><a href="">
+                                    <img src="img/star-plus-outline.svg"
+                                            alt="like icon">
+                                </a></button>
+                                <button class="watch-button"><a href="">
+                                    <img src="img/eye-plus-outline.svg"
+                                            alt="watch project icon">
+                                </a></button>
+                                <button class="git-button"><a href=""><img src="img/git.svg" alt="git icon"></a></button>
                             </div>
                         </div>
                         <div class="card">
@@ -118,11 +133,15 @@
                                 </p>
                             </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="img/star-plus-outline.svg"
-                                        alt="like icon"></button>
-                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
-                                        alt="watch project icon"></button>
-                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
+                                <button class="fav-button"><a href="">
+                                    <img src="img/star-plus-outline.svg"
+                                            alt="like icon">
+                                </a></button>
+                                <button class="watch-button"><a href="">
+                                    <img src="img/eye-plus-outline.svg"
+                                            alt="watch project icon">
+                                </a></button>
+                                <button class="git-button"><a href=""><img src="img/git.svg" alt="git icon"></a></button>
                             </div>
                         </div>
                         <div class="card">
@@ -135,11 +154,15 @@
                                 </p>
                             </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="img/star-plus-outline.svg"
-                                        alt="like icon"></button>
-                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
-                                        alt="watch project icon"></button>
-                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
+                                <button class="fav-button"><a href="">
+                                    <img src="img/star-plus-outline.svg"
+                                            alt="like icon">
+                                </a></button>
+                                <button class="watch-button"><a href="">
+                                    <img src="img/eye-plus-outline.svg"
+                                            alt="watch project icon">
+                                </a></button>
+                                <button class="git-button"><a href=""><img src="img/git.svg" alt="git icon"></a></button>
                             </div>
                         </div>
                         <div class="card">
@@ -152,11 +175,15 @@
                                 </p>
                             </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="img/star-plus-outline.svg"
-                                        alt="like icon"></button>
-                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
-                                        alt="watch project icon"></button>
-                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
+                                <button class="fav-button"><a href="">
+                                    <img src="img/star-plus-outline.svg"
+                                            alt="like icon">
+                                </a></button>
+                                <button class="watch-button"><a href="">
+                                    <img src="img/eye-plus-outline.svg"
+                                            alt="watch project icon">
+                                </a></button>
+                                <button class="git-button"><a href=""><img src="img/git.svg" alt="git icon"></a></button>
                             </div>
                         </div>
                         <div class="card">
@@ -169,11 +196,15 @@
                                 </p>
                             </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="img/star-plus-outline.svg"
-                                        alt="like icon"></button>
-                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
-                                        alt="watch project icon"></button>
-                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
+                                <button class="fav-button"><a href="">
+                                    <img src="img/star-plus-outline.svg"
+                                            alt="like icon">
+                                </a></button>
+                                <button class="watch-button"><a href="">
+                                    <img src="img/eye-plus-outline.svg"
+                                            alt="watch project icon">
+                                </a></button>
+                                <button class="git-button"><a href=""><img src="img/git.svg" alt="git icon"></a></button>
                             </div>
                         </div>
 
@@ -183,6 +214,7 @@
                 </div>
             </div>
             <div class="col-2-wrapper">
+                <div class="title">Announcements</div>
                 <div class="announcements">
                     <div class="announcement-card">
                         <h1>Site Maintenance</h1>
@@ -200,26 +232,35 @@
                             corporis culpa dolorem. </p>
                     </div>
                 </div>
+                <div class="title">Trending</div>
                 <div class="trending">
                     <div class="profile-card">
                         <img src="img/girl-svgrepo-com.svg">
-                        <h2 class="account-name ">@putnam</h2>
-                        <p class="profile-description">World Peace Builder</p>
+                        <div class="profile-card-text-container">
+                            <h2 class="account-name ">@putnam</h2>
+                            <p class="profile-description">World Peace Builder</p>
+                        </div>
                     </div>
                     <div class="profile-card">
                         <img src="img/matureman1-svgrepo-com.svg">
-                        <h2 class="account-name">@stewart</h2>
-                        <p class="profile-description">Super Cool Project</p>
+                        <div class="profile-card-text-container">
+                            <h2 class="account-name">@stewart</h2>
+                            <p class="profile-description">Super Cool Project</p>
+                        </div>
                     </div>
                     <div class="profile-card">
                         <img src="img/malecostume-svgrepo-com.svg">
-                        <h2 class="account-name">@washington</h2>
-                        <p class="profile-description">Life Changing App</p>
+                        <div class="profile-card-text-container">
+                            <h2 class="account-name">@washington</h2>
+                            <p class="profile-description">Life Changing App</p>
+                        </div>
                     </div>
                     <div class="profile-card">
                         <img src="img/male-svgrepo-com.svg">
-                        <h2 class="account-name">@lee</h2>
-                        <p class="profile-description">No Traffic Maker</p>
+                        <div class="profile-card-text-container">
+                            <h2 class="account-name">@lee</h2>
+                            <p class="profile-description">No Traffic Maker</p>
+                        </div>
                     </div>
                 </div>
             </div>
