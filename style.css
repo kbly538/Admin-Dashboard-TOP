@@ -1,12 +1,11 @@
 * {
     font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .container {
-    background-color: chocolate;
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     /* grid-template-areas: 
@@ -18,24 +17,253 @@
 }
 
 
+/* HEADER */
 .header {
-    background-color: blanchedalmond;
+    background-color: white;
     border: 1px solid black;
     grid-area: 1 / 2 / 2 / 8;
     /* grid-area: header; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 100px 30px 30px;
 
 }
 
+
+/* HEADER - Search Bar */
+.search-bar {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.search-bar>label{
+    flex: 1 0 auto
+}
+
+.search-bar>label>input {
+    background-color:#E2E8F0;
+    width: 80%;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+
+/* HEADER - Greeting */
+.account-name {
+    font-weight: bold;
+}
+
+.profile-name {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 20px;
+   
+}
+
+
+
+.profile-name>img{
+    height: 80px;
+    border-radius: 30%;
+}
+
+
+/* HEADER - Profile Settings */ 
+.profile-settings {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.profile-settings > .profile-picture {
+    height: 2rem;
+    border-radius: 30%;
+
+}
+
+.profile-settings > .profile-name {
+    padding-left: 20px;
+}
+
+
+.profile-name {
+    padding: 0;
+}
+
+.bell-icon {
+    margin-right: 20px;
+}
+
+
+/* HEADER - Action */
+.actions {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.actions ul {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5rem
+    
+}
+
+.header > .actions > ul > li{
+    background-color: #1992D4;
+    border: 1px solid #1992D4;
+    border-radius: 1rem;
+    padding: 5px 40px;
+}
+
+
+/* SIDEBAR */
+
 .sidebar {
-    background-color: dodgerblue;
+    background-color: #1992D4;
     border: 1px solid black;
     grid-row: 1 / 8;
     /* grid-area: sidebar; */
+    font-size: 24px;
+    font-weight: bold;
 }
 
+.sidebar img  {
+    height: 28px;
+}
+
+.sidebar-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 70px;
+    padding-left: 20px;
+}
+
+.pages>ul>li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 25px;
+    color: white;
+    margin-bottom: 28px;
+    
+}
+
+
+.extras>ul>li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 25px;
+    color:white;
+    margin-bottom: 28px;
+}
+
+
+/* MAIN CONTENT */
 .main-content {
-    background-color: grey;
+    background-color: #E2E8F0;
     border: 1px solid black;
     grid-area: 2 / 2 / 8 / 8;
     /* grid-area: main-content; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 50px;
+    padding: 40px 30px;
+}
+
+.main-content .title {
+    padding-bottom: 15px;
+    font-size: 32px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: auto;
+    gap: 30px;
+    font-size: 16px;
+}
+
+.card {
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 10px;
+    border-left-color: orange;
+    border-left-width: 10px;
+    border-left-style: solid;
+
+    
+}
+
+.project-description p {
+ 
+    padding-right: 50px;
+    margin-bottom: 60px;
+    height: 10ch;
+}
+
+
+
+.card-title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+.card-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+}
+
+.card-buttons button {
+    height: 28px;
+    
+}
+
+.card-buttons button img{
+    height: 28px;
+}
+
+
+
+
+/* EXTRAS */
+img {
+    height: 36px;
+}
+
+.logo-title {
+    padding: 30px 20px 50px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

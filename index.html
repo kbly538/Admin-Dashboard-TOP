@@ -13,42 +13,48 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="title">Dashboard</div>
-            <div class="pages">
-                <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
-                </ul>
-            </div>
-            <div class="extras">
-                <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
-                </ul>
+            <div class="logo-title"> <img src="img/dashboard-logo.svg" alt="dashboard logo"> Dashboard</div>
+            <div class="sidebar-grid-container">
+
+                <div class="pages">
+                    <ul>
+                        <li class="home"><img src="img/home.svg" alt="home icon"> Home</li>
+                        <li class="profile"><img src="img/card-account-details-outline.svg" alt="profile icon"> Profile
+                        </li>
+                        <li class="messages"><img src="img/message-reply.svg" alt="messages icon"> Messages</li>
+                        <li class="history"><img src="img/history.svg" alt=""> History</li>
+                        <li class="tasks"><img src="img/file-tree.svg" alt=""> Tasks</li>
+                        <li class="Communities"><img src="img/account-group.svg" alt=""> Communities</li>
+                    </ul>
+                </div>
+                <div class="extras">
+                    <ul>
+                        <li class="settings"><img src="img/tune.svg" alt=""> Settings</li>
+                        <li class="supports"><img src="img/face-agent.svg" alt=""> Support</li>
+                        <li class="privacy"><img src="img/shield-account.svg" alt=""> Privacy</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="header">
             <div class="search-bar">
-                <img src="./src/select-search-24-b.png" alt="searchbar icon">
+                <img class="search-icon" src="./img/magnify.svg" alt="searchbar icon">
                 <label for="search-bar">
-                    <input type="text" name="searchtext" id="search-bar" style="width: 200px; background-color: white">
+                    <input type="text" name="searchtext" id="search-bar">
                 </label>
             </div>
             <div class="profile-name">
-                <img src="src/face-woman-profile.png" alt="profile picture">
-                <p>Hi there, </p>
-                <p>Sojourner(@guest)</p>
+                <img src="img/female-svgrepo-com.svg" alt="profile picture">
+                <div class="greeting">
+                    <p>Hi there, </p>
+                    <p>General Stewart <span class="account-name">(@stewart)</span></p>
+                </div>
             </div>
             <div class="profile-settings">
-                <img src="src/bell-badge-outline-36.png" alt="notification bell">
-                <img src="src/face-woman-profile.png" alt="">
+                <img class="bell-icon" src="img/bell-alert-outline.svg" alt="notification bell">
+                <img class="profile-picture" src="img/female-svgrepo-com.svg" alt="">
                 <div class="profile-name">
-                    <a href="#">Sojourner</a>
+                    <a href="#">General Stewart</a>
                 </div>
             </div>
             <div class="actions">
@@ -66,77 +72,113 @@
                     <div class="card-container">
                         <div class="card">
                             <h1 class="card-title">Super Cool Project</h1>
-                            <p class="card-para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit totam
-                                veniam eum reiciendis
-                            </p>
+                            <div class="project-description">
+                                <p class="card-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit
+                                    totam
+                                    veniam eum reiciendis
+                                </p>
+                            </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="src/heart-outline-36.png" alt="like icon"></button>
-                                <button class="watch-button"><img src="src/eye-plus-outline-36.png" alt="watch project icon"></button>
-                                <button class="git-button"><img src="src/github-36.png" alt="git icon"></button>
+                                <button class="fav-button"><img src="img/star-plus-outline.svg"
+                                        alt="like icon"></button>
+                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
+                                        alt="watch project icon"></button>
+                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
                             </div>
                         </div>
                         <div class="card">
-                            <h1 class="card-title">Less Cool Project</h1>
-                            <p class="card-para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit totam
-                                veniam eum reiciendis
-                            </p>
+                            <h1 class="card-title">Super Cool Project</h1>
+                            <div class="project-description">
+                                <p class="card-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit
+                                    totam
+                                    veniam eum reiciendis
+                                </p>
+                            </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="src/heart-outline-36.png" alt="like icon"></button>
-                                <button class="watch-button"><img src="src/eye-plus-outline-36.png" alt="watch project icon"></button>
-                                <button class="git-button"><img src="src/github-36.png" alt="git icon"></button>
+                                <button class="fav-button"><img src="img/star-plus-outline.svg"
+                                        alt="like icon"></button>
+                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
+                                        alt="watch project icon"></button>
+                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
                             </div>
                         </div>
                         <div class="card">
-                            <h1 class="card-title">Impossible App</h1>
-                            <p class="card-para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit totam
-                                veniam eum reiciendis
-                            </p>
+                            <h1 class="card-title">Super Cool Project</h1>
+                            <div class="project-description">
+                                <p class="card-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit
+                                    totam
+                                    veniam eum reiciendis Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Molestiae, maxime? Rem odit
+                                    totam
+                                    
+                                    
+                                </p>
+                            </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="src/heart-outline-36.png" alt="like icon"></button>
-                                <button class="watch-button"><img src="src/eye-plus-outline-36.png" alt="watch project icon"></button>
-                                <button class="git-button"><img src="src/github-36.png" alt="git icon"></button>
+                                <button class="fav-button"><img src="img/star-plus-outline.svg"
+                                        alt="like icon"></button>
+                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
+                                        alt="watch project icon"></button>
+                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
                             </div>
                         </div>
                         <div class="card">
-                            <h1 class="card-title">Easy Peasy App</h1>
-                            <p class="card-para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit totam
-                                veniam eum reiciendis
-                            </p>
+                            <h1 class="card-title">Super Cool Project</h1>
+                            <div class="project-description">
+                                <p class="card-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit
+                                    totam
+                                    veniam eum reiciendis
+                                </p>
+                            </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="src/heart-outline-36.png" alt="like icon"></button>
-                                <button class="watch-button"><img src="src/eye-plus-outline-36.png" alt="watch project icon"></button>
-                                <button class="git-button"><img src="src/github-36.png" alt="git icon"></button>
+                                <button class="fav-button"><img src="img/star-plus-outline.svg"
+                                        alt="like icon"></button>
+                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
+                                        alt="watch project icon"></button>
+                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
                             </div>
                         </div>
                         <div class="card">
-                            <h1 class="card-title">Ad Blocker</h1>
-                            <p class="card-para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit totam
-                                veniam eum reiciendis
-                            </p>
+                            <h1 class="card-title">Super Cool Project</h1>
+                            <div class="project-description">
+                                <p class="card-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit
+                                    totam
+                                    veniam eum reiciendis
+                                </p>
+                            </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="src/heart-outline-36.png" alt="like icon"></button>
-                                <button class="watch-button"><img src="src/eye-plus-outline-36.png" alt="watch project icon"></button>
-                                <button class="git-button"><img src="src/github-36.png" alt="git icon"></button>
+                                <button class="fav-button"><img src="img/star-plus-outline.svg"
+                                        alt="like icon"></button>
+                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
+                                        alt="watch project icon"></button>
+                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
                             </div>
                         </div>
                         <div class="card">
-                            <h1 class="card-title">Money Maker</h1>
-                            <p class="card-para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit totam
-                                veniam eum reiciendis
-                            </p>
+                            <h1 class="card-title">Super Cool Project</h1>
+                            <div class="project-description">
+                                <p class="card-para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, maxime? Rem odit
+                                    totam
+                                    veniam eum reiciendis
+                                </p>
+                            </div>
                             <div class="card-buttons">
-                                <button class="fav-button"><img src="src/heart-outline-36.png" alt="like icon"></button>
-                                <button class="watch-button"><img src="src/eye-plus-outline-36.png" alt="watch project icon"></button>
-                                <button class="git-button"><img src="src/github-36.png" alt="git icon"></button>
+                                <button class="fav-button"><img src="img/star-plus-outline.svg"
+                                        alt="like icon"></button>
+                                <button class="watch-button"><img src="img/eye-plus-outline.svg"
+                                        alt="watch project icon"></button>
+                                <button class="git-button"><img src="img/git.svg" alt="git icon"></button>
                             </div>
                         </div>
-    
+
+
+
                     </div>
                 </div>
             </div>
@@ -144,41 +186,44 @@
                 <div class="announcements">
                     <div class="announcement-card">
                         <h1>Site Maintenance</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat exercitationem corporis culpa dolorem. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat exercitationem
+                            corporis culpa dolorem. </p>
                     </div>
                     <div class="announcement-card">
-                        <h1>Community Share  Day</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat exercitationem corporis culpa dolorem. </p>
+                        <h1>Community Share Day</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat exercitationem
+                            corporis culpa dolorem. </p>
                     </div>
                     <div class="announcement-card">
                         <h1>Updated Privacy Policy</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat exercitationem corporis culpa dolorem. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam placeat exercitationem
+                            corporis culpa dolorem. </p>
                     </div>
                 </div>
                 <div class="trending">
                     <div class="profile-card">
-                        <img src="src/face-woman-profile.png">
-                        <h2 class="profile-name">@tegan</h2>
+                        <img src="img/girl-svgrepo-com.svg">
+                        <h2 class="account-name ">@putnam</h2>
                         <p class="profile-description">World Peace Builder</p>
                     </div>
                     <div class="profile-card">
-                        <img src="src/face-man-profile.png">
-                        <h2 class="profile-name">@morgan</h2>
+                        <img src="img/matureman1-svgrepo-com.svg">
+                        <h2 class="account-name">@stewart</h2>
                         <p class="profile-description">Super Cool Project</p>
                     </div>
                     <div class="profile-card">
-                        <img src="src/face-woman-profile.png">
-                        <h2 class="profile-name">@kendall</h2>
+                        <img src="img/malecostume-svgrepo-com.svg">
+                        <h2 class="account-name">@washington</h2>
                         <p class="profile-description">Life Changing App</p>
                     </div>
                     <div class="profile-card">
-                        <img src="src/face-man-profile.png">
-                        <h2 class="profile-name">@alex</h2>
+                        <img src="img/male-svgrepo-com.svg">
+                        <h2 class="account-name">@lee</h2>
                         <p class="profile-description">No Traffic Maker</p>
                     </div>
                 </div>
             </div>
-            
+
 
 
         </div>
